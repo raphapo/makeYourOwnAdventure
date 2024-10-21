@@ -8,11 +8,12 @@ public class Adventure{
         System.out.println("You are an adventurous pirate captain and the latest lord of the sea has just died,"+//intro
         "\nit is now your life mission to find the treasure and bring your fammily glory, to chose options chose between 1 or 2");
             
-        
-        System.out.println("now where do you want to go, The bar island(1) or skull island(2)?");//first choice
-        String response = sc.nextLine();
+        while(true){
+            System.out.println(""+
+            "\nNow where do you want to go, The bar island(1) or skull island(2)?");//first choice
+            String response = sc.nextLine();
 
-       // while(true){    
+            
             if(response.equals("1")){
                 
                 System.out.println("You head to the bar island." +
@@ -24,7 +25,16 @@ public class Adventure{
                     System.out.println("you Listen to the old man and head in the typhoon"+
                     "\nYour ship enters the typhoon, large waves rock the ship  soon water floods."+
                     "\nin the distace you spot a golden light with an island of gold, that visoion disipates as your body hits the water"+
-                    "\nThe old man lured you to your death, good game, you died.");//deah path
+                    "\nThe old man lured you to your death, good game, you died."+//deah path
+                    "\nDo you want to play again? (1).");
+                    response = sc.nextLine();
+                    if(response.equals("1")){
+                        System.out.println("Restaring simulation...");
+                    }
+                    else{
+                        break;
+                    }
+
                 
                 }
                 else if(response.equals("2")){
@@ -54,36 +64,85 @@ public class Adventure{
     
                                 if (response.equals("1")){
                                     System.out.println("You invite your crew over and tell them take all that you can, you deserve it"+
-                                    "\nCONGRATULATIONS, YOU WON THE GAME.");
+                                    "\nCONGRATULATIONS, YOU WON THE GAME,"+
+                                    "\nDo you want to play again? (1).");
+                                    response = sc.nextLine();
+                                    if(response.equals("1")){
+                                        System.out.println("Restaring simulation...");
+                                    }
+                                    else{
+                                        break;
+                                    }
+                                    
                                 }
                                 else{
                                     System.out.println("you feel that the crew did nothing and that you alone should get the treasure, one of the sailors finds out."+
                                     "\nthe smell of treachery fills the air, At night the crew stabs you repeatidly, your greed led you to your downfall"+
-                                    "\nYou died a greedy pirate, good game.");
+                                    "\nYou died a greedy pirate, good game."+
+                                    "\nDo you want to play again? (1).");
+                                    response = sc.nextLine();
+                                    if(response.equals("1")){
+                                        System.out.println("Restaring simulation...");
+                                    }
+                                    else{
+                                        break;
+                                    }
                                 }//survive
                             }
                             else if(response.equals("2")){
                                 System.out.println("You have chosen the scroll of knoledge"+
                                 "\nThe lybrarian leads you down a creepy corridor and annoces, here it is."+
                                 "\n You bend to pick it up and when you open it you feel your brain heating up"+
-                                "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game");//death
+                                "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game"+
+                                "\nDo you want to play again? (1).");
+                                response = sc.nextLine();
+                                if(response.equals("1")){
+                                    System.out.println("Restaring simulation...");
+                                }
+                                else{
+                                    break;
+                                }//death
                             }
                             else{
                                 System.out.println("You have chosen the scroll of power."+
                                 "\nThe lybrarian leads you down a creepy corridor and annoces, here it is."+
                                 "\n You bend to pick it up and when you open it you feel your brain heating up"+
-                                "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game");//death
+                                "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game"+
+                                "\nDo you want to play again? (1).");
+                                response = sc.nextLine();
+                                if(response.equals("1")){
+                                    System.out.println("Restaring simulation...");
+                                }
+                                else{
+                                    break;
+                                }//death
                             }
                         }
                         else{
-                            System.out.println("you dont listen to the pirates and head in the typhoon"+
+                            System.out.println("you dont listen to the pirates and head in the typhoon"+//death path
                             "\nYour ship enters the typhoon, large waves rock the ship  soon water floods."+
                             "\nin the distace you spot a golden light with an island of gold, that visoion disipates as your body hits the water"+
-                            "\nThe old man lured you to your death, good game, you died.");//deah path
+                            "\nThe old man lured you to your death, good game, you died."+
+                            "\nDo you want to play again? (1).");
+                            response = sc.nextLine();
+                            if(response.equals("1")){
+                                System.out.println("Restaring simulation...");
+                            }
+                            else{
+                                break;
+                            }//deah path
                         }
                     }
                     else if (response.equals("2")){
-                        System.out.println("the pirates visibly angered by your nerve attack your ship and you perish, good game and try again");//death path
+                        System.out.println("the pirates visibly angered by your nerve attack your ship and you perish, good game and try again"+
+                        "\nDo you want to play again? (1).");
+                        response = sc.nextLine();
+                        if(response.equals("1")){
+                            System.out.println("Restaring simulation...");
+                        }
+                        else{
+                            break;
+                        }//death path
                     }
                 }
                 else{
@@ -93,9 +152,17 @@ public class Adventure{
                     response = sc.nextLine();
                     if(response.equals("1")){
                         System.out.println("You have chosen the scroll of maps"+
-                        "\nThe lybrarian leads you down a creepy corridor and annoces, here it is."+
+                        "\nThe lybrarian leads you down a creepy corridor and annoces, 'here it is'."+
                         "\n You bend to pick it up and when you open it you feel your brain heating up"+
-                        "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game");//death
+                        "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game."+
+                        "\nDo you want to play again? (1).");
+                        response = sc.nextLine();
+                        if(response.equals("1")){
+                            System.out.println("Restaring simulation...");
+                        }
+                        else{
+                            break;
+                        }//death pah
                     }
                     else if(response.equals("2")){
                         System.out.println("You have chosen the scroll of knowledge"+
@@ -107,20 +174,44 @@ public class Adventure{
                         response= sc.nextLine();
 
                         if (response.equals("1")){
-                            System.out.println("You invite your crew over and tell them take all that you can, you deserve it"+
-                            "\nCONGRATULATIONS, YOU WON THE GAME.");
+                            System.out.println("You invite your crew over and tell them take all that you can, you deserve it"+//win condition
+                            "\nCONGRATULATIONS, YOU WON THE GAME."+
+                            "\nDo you want to play again? (1).");
+                            response = sc.nextLine();
+                            if(response.equals("1")){
+                                System.out.println("Restaring simulation...");
+                            }
+                            else{
+                                break;
+                            }
                         }
                         else{
-                            System.out.println("you feel that the crew did nothing and that you alone should get the treasure, one of the sailors finds out."+
+                            System.out.println("you feel that the crew did nothing and that you alone should get the treasure, one of the sailors finds out."+//death path
                             "\nthe smell of treachery fills the air, At night the crew stabs you repeatidly, your greed led you to your downfall"+
-                            "\nYou died a greedy pirate, good game.");
+                            "\nYou died a greedy pirate, good game."+
+                            "\nDo you want to play again? (1).");
+                            response = sc.nextLine();
+                            if(response.equals("1")){
+                                System.out.println("Restaring simulation...");
+                            }
+                            else{
+                                break;
+                            }
                         }
                     }
                     else{
                         System.out.println("You have chosen the scroll of power."+
                         "\nThe lybrarian leads you down a creepy corridor and annoces, here it is."+
                         "\n You bend to pick it up and when you open it you feel your brain heating up"+
-                        "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game");//death
+                        "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game"+
+                        "\nDo you want to play again? (1).");
+                        response = sc.nextLine();
+                        if(response.equals("1")){
+                            System.out.println("Restaring simulation...");
+                        }
+                        else{
+                            break;
+                        }//death path
                     }
                 }
             }
@@ -144,14 +235,30 @@ public class Adventure{
                             System.out.println("You have chosen the scroll of maps"+
                             "\nThe lybrarian leads you down a creepy corridor and annoces, here it is."+
                             "\nYou bend to pick it up and when you open it you feel your brain heating up"+
-                            "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game");//death
+                            "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game"+
+                            "\nDo you want to play again? (1).");
+                            response = sc.nextLine();
+                            if(response.equals("1")){
+                                System.out.println("Restaring simulation...");
+                            }
+                            else{
+                                break;
+                            }//death
 
                         }
                         else if(response.equals("2")){
                             System.out.println("You have chosen the scroll of knowledge"+
                             "\nThe lybrarian leads you down a creepy corridor and annoces, here it is."+
                             "\n You bend to pick it up and when you open it you feel your brain heating up"+
-                            "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game");//death
+                            "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game"+
+                            "\nDo you want to play again? (1).");
+                            response = sc.nextLine();
+                            if(response.equals("1")){
+                                System.out.println("Restaring simulation...");
+                            }
+                            else{
+                                break;
+                            }//death
                         }
                         else{
                             System.out.println("You have chosen the scroll of power."+
@@ -164,12 +271,28 @@ public class Adventure{
 
                             if (response.equals("1")){
                                 System.out.println("You invite your crew over and tell them take all that you can, you deserve it"+
-                                "\nCONGRATULATIONS, YOU WON THE GAME.");
+                                "\nCONGRATULATIONS, YOU WON THE GAME."+//win condition
+                                "\nDo you want to play again? (1).");
+                                response = sc.nextLine();
+                                if(response.equals("1")){
+                                    System.out.println("Restaring simulation...");
+                                }
+                                else{
+                                    break;
+                                }
                             }
                             else{
                                 System.out.println("you feel that the crew did nothing and that you alone should get the treasure, one of the sailors finds out."+
                                 "\nthe smell of treachery fills the air, At night the crew stabs you repeatidly, your greed led you to your downfall"+
-                                "\nYou died a greedy pirate, good game.");
+                                "\nYou died a greedy pirate, good game."+
+                                "\nDo you want to play again? (1).");
+                                response = sc.nextLine();
+                                if(response.equals("1")){
+                                    System.out.println("Restaring simulation...");
+                                }
+                                else{
+                                    break;
+                                }//death path
                             }
                         }
                     }
@@ -177,15 +300,31 @@ public class Adventure{
                         System.out.println("You head to what you think is a random island but is in fact a British navy ambush."+
                         "\nThey take control of your ship and tell you, 'you will be hanged for piracy'. This sends shivers down your spine"+
                         "\nThe next day they bring you and your crew to the gallows and place the ropes around your necks. one by one they kick the bucket"+
-                        "\nIt is now your turn, you look at the crowd, think of the treasure and then they kick your bucket. You died, good game.");//deathpath
+                        "\nIt is now your turn, you look at the crowd, think of the treasure and then they kick your bucket. You died, good game."+
+                        "\nDo you want to play again? (1).");
+                        response = sc.nextLine();
+                        if(response.equals("1")){
+                            System.out.println("Restaring simulation...");
+                        }
+                        else{
+                            break;
+                        }//deathpath
                     }
                     
                 }
                 else if (response.equals("2")){
-                    System.out.println("the pirates visibly angered by your nerve attack your ship and you perish, good game and try again");//death path
+                    System.out.println("the pirates visibly angered by your nerve attack your ship and you perish, good game and try again"+
+                    "\nDo you want to play again? (1).");
+                    response = sc.nextLine();
+                    if(response.equals("1")){
+                        System.out.println("Restaring simulation...");
+                    }
+                    else{
+                        break;
+                    }//death path
                 }
             }
-       // }
+        }
 
     sc.close();
     }
