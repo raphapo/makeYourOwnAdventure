@@ -1,7 +1,19 @@
 import java.util.Scanner;
 public class Adventure{
+           
+    //public static void playAgain(){      play again function
+        //Scanner sc = new Scanner(System.in);
+        //String response = sc.nextLine();
+                //if(response.equals("1")){
+                    //System.out.println("Restaring simulation...");
+                //}
+                //else{
+                    //break;
+                //}
+    //}
     public static void main(String[] args) {
-        
+ 
+
 
         Scanner sc = new Scanner(System.in);
         
@@ -24,7 +36,7 @@ public class Adventure{
                 if(response.equals("1")){
                     System.out.println("you Listen to the old man and head in the typhoon"+
                     "\nYour ship enters the typhoon, large waves rock the ship  soon water floods."+
-                    "\nin the distace you spot a golden light with an island of gold, that visoion disipates as your body hits the water"+
+                    "\nin the distace you spot a golden light with an island of gold, that vision disipates as your body hits the water"+
                     "\nThe old man lured you to your death, good game, you died."+//deah path
                     "\nDo you want to play again? (1).");
                     response = sc.nextLine();
@@ -49,14 +61,14 @@ public class Adventure{
                         response = sc.nextLine();
 
                         if(response.equals("1")){
-                            System.out.println("Your ship enters the golden harbor of the Great Emerald Lybrary, you are amazed that such a center of knoledge exist"+//lybrary 2
-                            "\nYou enter the Lybrary and ask the Librarian if they know anything about the ultimate treasure, They tell you they have three scrols about it, but you can only read one."+
-                            "\nThe lybrarian presents you with The scroll of maps (1), the scroll of knoledge(2) and the scroll of power.(3) wich one do you chose?");
+                            System.out.println("Your ship enters the golden harbor of the Great Emerald Library, you are amazed that such a center of knowledge exist"+//lybrary 2
+                            "\nYou enter the Lybrary and ask the Librarian if they know anything about the ultimate treasure, They tell you they have three scrolls about it, but you can only read one."+
+                            "\nThe lybrarian presents you with The scroll of maps (1), the scroll of knowledge(2) and the scroll of power.(3) wich one do you chose?");
                             response = sc.nextLine();
                             if(response.equals("1")){
                                 System.out.println("You have chosen the scroll of maps"+
                                 "\nThe lybrain has a creepy smile on their face as they leed you down a corridor, they annonce 'here it is' "+
-                                "\nYou pick up the scrool and feel power flowing though you viens, you exclaim 'this is it, we found it' "+
+                                "\nYou pick up the scrool and feel power flowing though you vienes, you exclaim 'this is it, we found it' "+
                                 "\nYou head back to your ship with the knowledge of the treasure in mind, you tell everyone to head to turtle island."+
                                 "\nYour ship arrive turle island and you order one of the sailors to dig at a specific spot, his shovel hits something hard"+
                                 "\nThis is it the treasure is in your grasp, do you share it with the crew (1) or keep it to yourself(2)");//survive
@@ -93,7 +105,7 @@ public class Adventure{
                                 System.out.println("You have chosen the scroll of knoledge"+
                                 "\nThe lybrarian leads you down a creepy corridor and annoces, here it is."+
                                 "\n You bend to pick it up and when you open it you feel your brain heating up"+
-                                "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game"+
+                                "\nyou drop to your knees and scream. You chose the wrong scroll, you died, good game"+
                                 "\nDo you want to play again? (1).");
                                 response = sc.nextLine();
                                 if(response.equals("1")){
@@ -107,7 +119,7 @@ public class Adventure{
                                 System.out.println("You have chosen the scroll of power."+
                                 "\nThe lybrarian leads you down a creepy corridor and annoces, here it is."+
                                 "\n You bend to pick it up and when you open it you feel your brain heating up"+
-                                "\nyou drop to your knees and scream. You chose the wrong scrool, you died, good game"+
+                                "\nyou drop to your knees and scream. You chose the wrong scroll, you died, good game"+
                                 "\nDo you want to play again? (1).");
                                 response = sc.nextLine();
                                 if(response.equals("1")){
@@ -121,8 +133,8 @@ public class Adventure{
                         else{
                             System.out.println("you dont listen to the pirates and head in the typhoon"+//death path
                             "\nYour ship enters the typhoon, large waves rock the ship  soon water floods."+
-                            "\nin the distace you spot a golden light with an island of gold, that visoion disipates as your body hits the water"+
-                            "\nThe old man lured you to your death, good game, you died."+
+                            "\nin the distace you spot a golden light with an island of gold, that vision disipates as your body hits the water"+
+                            "\nThe pirates lured you to your death, good game, you died."+
                             "\nDo you want to play again? (1).");
                             response = sc.nextLine();
                             if(response.equals("1")){
